@@ -59,6 +59,7 @@
     "@tsed/cli-plugin-eslint": "4.2.2",
     "@tsed/cli-plugin-jest": "4.2.2",
     "@tsed/cli-plugin-mongoose": "4.2.2",
+    "@tsed/components-scan": "^7.4.0",
     "@tsed/testing-mongoose": "^7.3.1",
     "@types/compression": "^1.7.2",
     "@types/cookie-parser": "^1.4.3",

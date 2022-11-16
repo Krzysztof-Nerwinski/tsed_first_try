@@ -31,9 +31,16 @@
     ]
   },
   "include": [
-    "src"
+    "src",
+    "jest.config.js",
+    "processes.config.js"
+  ],
+  "exclude": [
+    "coverage"
   ],
   "linterOptions": {
-    "exclude": []
+    "exclude": [
+      "coverage"
+    ]
   }
 }
