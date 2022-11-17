@@ -1,4 +1,4 @@
-const { MONGO_USER, MONGO_PASSWORD, DEFAULT_URL, MONGO_DB_NAME } = process.env;
+const { DEFAULT_URL, MONGO_DB_NAME } = process.env;
 
 export default {
     id: 'default',
