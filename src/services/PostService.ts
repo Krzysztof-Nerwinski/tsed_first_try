@@ -54,11 +54,6 @@ export class PostService {
     public async delete(
         postId: string
     ): Promise<QueryWithHelpers<mongodb.DeleteResult, PostModel>> {
-        const deleteResult = await this.model.deleteOne({ _id: postId });
-        if (deleteResult.deletedCount !== 0) {
-            return deleteResult;
-        } else {
-            throw new NotFound('Not Found');
-        }
+        return this.model.deleteOne({ _id: postId });
     }
 }
