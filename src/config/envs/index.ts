@@ -1,9 +1,10 @@
-import dotenv from "dotenv"
+import dotenv from 'dotenv';
+
+export const isProduction = process.env.NODE_ENV === 'production';
+
+const envSuffix = isProduction ? 'prod' : 'local';
 
 export const envs = {
     ...process.env,
-    ...dotenv.config().parsed
+    ...dotenv.config({ path: `.env.${envSuffix}` }).parsed,
 };
-
-
-export const isProduction = process.env.NODE_ENV === "production";

@@ -1,0 +1,1 @@
+{"openapi":"3.0.1","info":{"title":"Api documentation","version":"1.0.0"},"paths":{"/api/hello-world":{"get":{"operationId":"helloWorldControllerGet","responses":{"200":{"description":"Success"}},"parameters":[],"tags":["HelloWorldController"]}}},"tags":[{"name":"HelloWorldController"}]}
