@@ -32,6 +32,7 @@
   },
   "include": [
     "src",
+    "index.ts",
     "jest.config.js",
     "processes.config.js"
   ],

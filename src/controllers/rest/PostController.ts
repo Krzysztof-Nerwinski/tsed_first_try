@@ -12,6 +12,7 @@ export class EmptyResponse {}
 @Controller('/posts')
 export class PostController {
     @Inject(PostService) private service: PostService;
+    @Inject(PostModel) private post: PostModel;
 
     @Get('/')
     @Returns(200, PostModel)
